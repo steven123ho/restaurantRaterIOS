@@ -13,6 +13,8 @@
 		928C6C652BB074AD00887B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 928C6C632BB074AD00887B9F /* Main.storyboard */; };
 		928C6C672BB074AD00887B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928C6C662BB074AD00887B9F /* Assets.xcassets */; };
 		928C6C6A2BB074AD00887B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 928C6C682BB074AD00887B9F /* LaunchScreen.storyboard */; };
+		928C6C782BB07F4300887B9F /* DishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C6C772BB07F4300887B9F /* DishViewController.swift */; };
+		928C6C7B2BB0804E00887B9F /* RestaurantDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 928C6C792BB0804E00887B9F /* RestaurantDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		928C6C662BB074AD00887B9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		928C6C692BB074AD00887B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		928C6C6B2BB074AD00887B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		928C6C772BB07F4300887B9F /* DishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewController.swift; sourceTree = "<group>"; };
+		928C6C7A2BB0804E00887B9F /* RestaurantDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RestaurantDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				928C6C662BB074AD00887B9F /* Assets.xcassets */,
 				928C6C682BB074AD00887B9F /* LaunchScreen.storyboard */,
 				928C6C6B2BB074AD00887B9F /* Info.plist */,
+				928C6C772BB07F4300887B9F /* DishViewController.swift */,
+				928C6C792BB0804E00887B9F /* RestaurantDataModel.xcdatamodeld */,
 			);
 			path = RestaurantRater;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				928C6C622BB074AD00887B9F /* ViewController.swift in Sources */,
 				928C6C5E2BB074AD00887B9F /* AppDelegate.swift in Sources */,
+				928C6C782BB07F4300887B9F /* DishViewController.swift in Sources */,
+				928C6C7B2BB0804E00887B9F /* RestaurantDataModel.xcdatamodeld in Sources */,
 				928C6C602BB074AD00887B9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +369,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		928C6C792BB0804E00887B9F /* RestaurantDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				928C6C7A2BB0804E00887B9F /* RestaurantDataModel.xcdatamodel */,
+			);
+			currentVersion = 928C6C7A2BB0804E00887B9F /* RestaurantDataModel.xcdatamodel */;
+			path = RestaurantDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 928C6C522BB074AC00887B9F /* Project object */;
 }
