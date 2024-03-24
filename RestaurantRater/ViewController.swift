@@ -15,8 +15,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtAddress: UITextField!
     @IBOutlet weak var sgmtEditMode: UISegmentedControl!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var addDishButton: UIButton!
     
- 
+    var restaurantName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +49,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         appDelegate.saveContext()
         sgmtEditMode.selectedSegmentIndex = 0
         changeEditMode(self)
+        addDishButton.isHidden = false
+        
+        restaurantName = txtName.text
+        UserDefaults.standard.set(restaurantName, forKey: "restaurantName")
     }
     
     
@@ -58,12 +64,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 textField.isEnabled = false
                 textField.borderStyle = UITextField.BorderStyle.none
             }
-            navigationItem.rightBarButtonItem = nil
+            saveButton.isHidden = true
+            addDishButton.isHidden = true
         } else if sgmtEditMode.selectedSegmentIndex == 1 {
             for textField in textFields {
                 textField.isEnabled = true
                 textField.borderStyle = UITextField.BorderStyle.roundedRect
             }
+            saveButton.isHidden = false
         }
     }
     
